@@ -1,0 +1,16 @@
+# Getting started
+- Copy the hello world-ish code from here: https://platform.openai.com/docs/libraries?language=python into a source file.
+- Create a virtual environment for Python. Do it at the root level of the project directory as VSCode creates it that way.
+  - `python -m venv .venv`
+  - Alternatively, you can let VSCode create a new virtual environment, that does it at the parent level.
+- Activate the virtual environment.
+  - `source .venv/bin/activate`
+- Install the openai library
+  - `pip install openai`
+  - Installing the activated virtual environment will also make VSCode recognize imports.
+- Setup the OpenAI API key.
+  - For the terminal, this can be done using `export OPENAI_API_KEY=<key>`
+  - For VSCode integration, you create a .env file at the root and add the line there.
+- You can now run the hello world in many ways:
+  - You can run it from a terminal where the virtual environment is activated and the OPENAI_API_KEY is exported.
+  - You can also run it from within VSCode using Run. The .env file will load the required API key into the run environment.
